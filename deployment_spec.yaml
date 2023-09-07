@@ -13,9 +13,9 @@ steps:
     name: CopyFiles
     command: cp -a /tmp/site/public/. /var/www/html/
     runAs: root
-    timeoutInSeconds: 300
+    timeoutInSeconds: 800
   - stepType: Command 
     name: CopyFiles
     command: chmod -R u=rwx,go=rx /var/www/html
     runAs: root
-    timeoutInSeconds: 300
+    timeoutInSeconds: 800
