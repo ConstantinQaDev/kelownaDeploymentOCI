@@ -16,12 +16,12 @@ pipeline {
         steps {
           OCIUploadArtifact(credentialsId: 'kelowna-trails-global-credencials-apikey-fingerprint-tenantid-userid-regionid',
           uploadArtifactDetailsList: [[artifactPath: 'public.tar.gz',
-          repositoryId: 'ocid1.artifactrepository.oc1.us-sanjose-1.0.amaaaaaaerm3fwyauyudyck4jipbxn3la2lctijbfh2a5ye2zbbb6a6x462q',
+          repositoryId: 'ocid1.artifactrepository.oc1.us-sanjose-1.0.amaaaaaaerm3fwyaoaagm6kks3fplpjcpfh3mapwcu2hltzs5mzhotdypbyq',
           repositoryType: 'GENERIC',
           sourcePath: 'public.tar.gz',
           version: "1.$BUILD_NUMBER"],
           [artifactPath: 'deployment_spec.yaml',
-          repositoryId: 'ocid1.artifactrepository.oc1.us-sanjose-1.0.amaaaaaaerm3fwyauyudyck4jipbxn3la2lctijbfh2a5ye2zbbb6a6x462q',
+          repositoryId: 'ocid1.artifactrepository.oc1.us-sanjose-1.0.amaaaaaaerm3fwyaoaagm6kks3fplpjcpfh3mapwcu2hltzs5mzhotdypbyq',
           repositoryType: 'GENERIC',
           sourcePath: 'deployment_spec.yaml',
           version: "1.$BUILD_NUMBER"]
